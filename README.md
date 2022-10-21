@@ -1,1 +1,1 @@
-# psu-jnj-data-optimization
+# Data Optimization Project done for Johnson & Johnson - PSU
