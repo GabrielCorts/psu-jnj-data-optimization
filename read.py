@@ -1,6 +1,7 @@
 import pandas as pd
 import glob as glob
 import csv
+import col_types
 
 #Função para leitura dos arquivos presentes nas pastas
 def readFiles():
@@ -19,10 +20,9 @@ def readFiles():
 #Leitura dos Arquivos
 def readPOs(files: list[str]):
     df_vec = []
-    types_dict = {'poRequisitionerWwid': str, 'poPreparerWwid': str, 'mrc': str}
 
     for file in files:
-        df_vec.append(pd.read_csv(file, sep='|', dtype=types_dict))
+        df_vec.append(pd.read_csv(file, sep='|', dtype=col_types.types_dict, parse_dates=col_types.parse_dates))
     
     if not df_vec:
         return pd.DataFrame()
