@@ -52,8 +52,8 @@ types_dict = {
     'matOrSrc': str,
     'requisitionNumber': str,
     'receivableIndicator': str,
-    'poLineNumber': float,
-    'splitLineNumber': float
+    'poLineNumber': str,
+    'splitLineNumber': str
 }
 
 parse_dates = [
