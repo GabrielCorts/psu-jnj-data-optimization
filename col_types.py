@@ -1,6 +1,8 @@
 import numpy as np
 
 types_dict = {
+    'id': int,
+    
     'poNumber': str,
     'poName': str,
     'poRequisitionerWwid': str,
@@ -53,7 +55,12 @@ types_dict = {
     'requisitionNumber': str,
     'receivableIndicator': str,
     'poLineNumber': str,
-    'splitLineNumber': str
+    'splitLineNumber': str,
+
+    'delta': int,
+    'isRaw': bool,
+    'isValid': bool,
+    'poId': str
 }
 
 parse_dates = [
